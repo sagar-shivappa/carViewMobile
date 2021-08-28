@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: hsla(0, 0%, 100%, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    width: 1440px; 
+    margin-top: 0px;
+    
+    /* background-color: black; */
+    border-radius: 10px;
+}
+@media(min-width:850px){
+    .card{
+        flex-direction: row;
+        margin-top: 0px;
+    }
+}
+h1{
+   
+    font-family: 'Big Shoulders Display', cursive;
+    color: white;
+    font-weight: 700;
+}
+h3{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: white;
+}
+.sedan{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 10px 0px 0px;
+}
+@media(min-width:850px){
+    .sedan{
+        width: 33.33%;
+        border-radius: 10px 0px 0px 10px;
+    }
+}
+.sedanText{
+    /* margin-top: 30%; */
+    margin-left: 15%;
+    margin-right: 5%;
+    position: relative;
+}
+.icon{
+    margin-left: 5%;
+    
+    position: relative;
+    /* margin-top: 20%; */
+    /* margin-top: 50px; */
+   
+    transition: all 0.5s;
+    /* margin-bottom: 20%; */
+    padding: 10%;
+}
+.icon:hover{
+    transform: scale(1.1);
+}
+.suvs{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(184, 100%, 22%);
+}
+@media(min-width:850px){
+    .suvs{
+        width: 33.33%;
+        border-radius: 0px 0px 0px 0px;
+    }
+}
+.luxury{
+    width: 50%;
+    height: 100%;
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 0px 10px 10px;
+}
+@media(min-width:850px){
+    .luxury{
+        width: 33.33%;
+        border-radius: 0px 10px 10px 0px;
+    }
+}
+.learnButton{
+    font-family: 'Lexend Deca', sans-serif;
+    width: 40%;
+    height: 90%;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border:3px solid white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+@media(min-width:850px){
+    .learnButton{
+    font-family: 'Lexend Deca', sans-serif;
+    width: 170px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: transparent;
+    color: white;
+    border:3px solid white;
+    margin-left: 15%;
+    margin-top: 10px;
+    font-weight: 400;
+    transition: all 0.5s;
+    }
+}
+.learnButton:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
